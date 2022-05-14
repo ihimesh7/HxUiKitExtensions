@@ -174,7 +174,7 @@ public extension UIViewController {
         lblToast.layer.cornerRadius = 10;
         lblToast.clipsToBounds  =  true
         self.view.addSubview(lblToast)
-        UIView.animate(withDuration: 2.5, delay: 0.1, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 2.5, delay: 1, options: .curveEaseOut, animations: {
             lblToast.alpha = 0.0
         }, completion: {(isCompleted) in
             lblToast.removeFromSuperview()
